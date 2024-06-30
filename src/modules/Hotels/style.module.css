@@ -1,0 +1,49 @@
+.hotels_main_page{
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    justify-content:space-between ;
+
+}
+.hotels_container{
+    box-shadow: 9px 6px 60px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 30px;
+}
+
+.hotels_image{
+    width: 430px;
+    height: 397px;
+}
+.hotels_text_container{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #6e7491;
+}
+.hotels_text_name{
+    padding: 0 10px ;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #6e7491;
+}
+.hotels_price{
+    padding: 0 10px;
+}
+.hotels_text{
+    width: 390px;
+    padding: 0px 0px 15px 15px;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #7c8db0;
+}
