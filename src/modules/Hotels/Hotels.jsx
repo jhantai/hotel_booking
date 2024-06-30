@@ -1,5 +1,6 @@
 import React from 'react';
 import {HOTELS_DATA} from '../../constants/hotels'
+import style from './style.module.css'
 const Hotels = () => {
     return (
         <div>
