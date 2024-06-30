@@ -1,0 +1,70 @@
+.reviews_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.tittle-tripma{
+
+    width: 334px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #6e7491;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+
+}
+.tripma_span{
+    padding: 5px;
+    color: #605dec;
+    /*padding-left: 5px;*/
+}
+
+.reviews_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.reviews_info{
+    width: 380px;
+    height: 350px;
+    padding: 15px;
+    box-shadow: 9px 6px 60px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 30px;
+
+}
+.reviews_info p {
+    text-align: left;
+}
+
+.reviews_img{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-size: 100%;
+
+}
+
+.reviews_item{
+    color: #27273f;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100,
+            "YTLC" 500;
+
+}
+h4.reviews_item{
+    color: #6e7491;
+    font-weight: 600;
+
+}
