@@ -26,7 +26,7 @@ header {
     font-weight: 500;
 }
 
-.navigation a {
+.navigation a, span {
     text-decoration: none;
     color: #7C8DB0;
     cursor: pointer;
