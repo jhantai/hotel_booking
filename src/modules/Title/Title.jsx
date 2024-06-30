@@ -2,6 +2,7 @@ import React from 'react';
 import style from './style.module.css'
 import InputMaterial from "../../components/InputMaterial/InputMaterial";
 import {INPUTS_DATA} from "../../constants/INPUTS_DATA";
+import {Button} from "@mui/material";
 
 const TitleComp = () => {
     return (
@@ -19,8 +20,7 @@ const TitleComp = () => {
                         />
                     )
                 })}
-                {/*<input className={style.Button} type="button" value={'Забронировать'}/>*/}
-
+                <input className={style.Button} type="button" value={'Забронировать'}/>
             </div>
 
         </div>
