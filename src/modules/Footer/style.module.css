@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 100px;
+
+}
+.logo{
+    margin: auto 0;
+}
+
+footer div ul {
+    list-style: none;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #6e7491;
+}
