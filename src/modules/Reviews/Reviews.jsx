@@ -5,36 +5,24 @@ import style from './style.module.css'
 const Reviews = () => {
     return (
         <div className={style.reviews_main}>
-
-         <h1 className={style.tittle_tripma}>
-             Что говорят пользователи
-             <span className={style.tripma_span}>Tripma</span>
-         </h1>
-                <div className={style.reviews_container}>
-            {REVIEWS_DATA.map((item, idx) => {
-                return (
-                    <div  key={idx}>
-
-
-
+             <h1 className={style.tittle_tripma}>
+                 Что говорят пользователи
+                 <span className={style.tripma_span}>Tripma</span>
+             </h1>
+            <div className={style.reviews_container}>
+                {REVIEWS_DATA.map((item, idx) => {
+                    return (
+                        <div  key={idx}>
                             <div className={style.reviews_info}>
                                 <img className={style.reviews_img} src={item.img} alt="d"/>
                                 <h4 className={style.reviews_item}> {item.name}</h4>
                                 <div><Rating defaultValue={item.stars} precision={0.5} readOnly/></div>
                                 <p className={style.reviews_item}>{item.text}</p>
-
                             </div>
-
-
                         </div>
-
-
-
-                )
-
-
-            })}
-                </div>
+                    )
+                })}
+            </div>
         </div>
     );
 };

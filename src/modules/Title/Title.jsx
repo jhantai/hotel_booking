@@ -2,6 +2,7 @@ import React from 'react';
 import style from './style.module.css'
 import InputMaterial from "../../components/InputMaterial/InputMaterial";
 import {INPUTS_DATA} from "../../constants/INPUTS_DATA";
+import {Button} from "@mui/material";
 
 const TitleComp = (props) => {
 
@@ -27,8 +28,12 @@ const TitleComp = (props) => {
                         />
                     )
                 })}
+<<<<<<< HEAD
                 <input onClick={() => {search(true)}} className={style.Button} type="button" value={'Забронировать'}/>
 
+=======
+                <input className={style.Button} type="button" value={'Забронировать'}/>
+>>>>>>> 66828de5e921c44b6a431c2100a66911736bf0d6
             </div>
 
         </div>
