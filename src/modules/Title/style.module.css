@@ -13,6 +13,8 @@
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    font-size: 55px;
+    text-align: center;
 }
 
 .Inputs {
@@ -22,10 +24,20 @@
 }
 
 .Button{
-    height: 32px;
+    height: 52px;
     margin-top: -1px;
     background: #605DEC;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &&:hover{
+        opacity: 90%;
+    }
+
+    &&:active{
+        opacity: 80%;
+    }
 }
