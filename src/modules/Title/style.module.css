@@ -1,0 +1,15 @@
+.titleComponent {
+    background: url("../../assets/images/title.png");
+    background-size: 100% 100%;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    padding-top: 70px;
+}
+
+.title{
+    color: #605DEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
