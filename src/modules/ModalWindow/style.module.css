@@ -1,0 +1,64 @@
+.ModalWindowBlur{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(110, 116, 145, 0.49);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.ModalWindow {
+    width: 60%;
+    height: 70vh;
+    background: white;
+    margin: 6% auto;
+    cursor: default;
+}
+
+.closeBtn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 95.5%;
+}
+
+.closeBtn svg {
+    cursor: pointer;
+    font-size: 30px;
+    color: #6e7491;
+}
+
+h2 {
+    text-align: center;
+    color: #6e7491;
+}
+
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*margin-top: 50px;*/
+    gap: 20px;
+    align-items: center;
+}
+
+.Button{
+    height: 52px;
+    margin-top: -1px;
+    background: #605DEC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 295px;
+
+    &&:hover{
+        opacity: 90%;
+    }
+
+    &&:active{
+        opacity: 80%;
+    }
+}

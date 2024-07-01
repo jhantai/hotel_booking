@@ -10,6 +10,27 @@ const showSuccess = (title, text) => {
     )
 }
 
+const showError = (title, text) => {
+    toast.error(
+        <Alert
+            title={title}
+            text={text}
+        />
+    )
+}
+
+const showInfo = (title, text) => {
+    toast.info(
+        <Alert
+            title={title}
+            text={text}
+        />
+    )
+}
+
+
 export {
-    showSuccess
+    showSuccess,
+    showError,
+    showInfo
 }
