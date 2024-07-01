@@ -9,11 +9,12 @@ const InputMaterial = (props) => {
         type,
         height,
         onChange,
+        width,
     } = props
 
     return (
         <div style={{height: height}} className={style.inputContainer}>
-            <input onChange={onChange} type={type} placeholder={placeholder}  />
+            <input style={{width: width}} onChange={onChange} type={type} placeholder={placeholder}  />
             <div className={style.inputIcon}>
                 <img src={icon} alt=""/>
             </div>
