@@ -6,7 +6,9 @@ const Header = ({search, hotels}) => {
     return (
         <header>
             <div>
-                <img src={logo} alt=""/>
+                <a href="/">
+                    <img src={logo} alt=""/>
+                </a>
             </div>
             <ul className={style.navigation}>
                 <li>
