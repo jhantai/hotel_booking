@@ -9,7 +9,7 @@ import ModalWindow from "../../modules/ModalWindow/ModalWindow";
 
 const HomePage = () => {
 
-    const [active, setActive] = useState(true)
+    const [active, setActive] = useState(false)
 
     return (
         <>
