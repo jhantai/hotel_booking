@@ -28,12 +28,7 @@ const TitleComp = (props) => {
                         />
                     )
                 })}
-
-                <input onClick={() => {search(true)}} className={style.Button} type="button" value={'Забронировать'}/>
-
-
-
-
+                <input onClick={() => {search(true)}} className={style.Button} type="button" value={'Поиск'}/>
             </div>
 
         </div>

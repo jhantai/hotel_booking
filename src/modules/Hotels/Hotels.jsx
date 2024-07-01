@@ -4,7 +4,7 @@ import style from './style.module.css'
 import {showSuccess} from "../../utils/Alert";
 const Hotels = () => {
     return (
-        <div className={style.hotels_main_page}>
+        <div id={'hotels'} className={style.hotels_main_page}>
             {HOTELS_DATA.map((item , idx)=>{
                 return(
                     <div key={idx}>

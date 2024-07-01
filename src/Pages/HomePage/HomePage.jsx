@@ -12,7 +12,10 @@ const HomePage = () => {
 
     return (
         <>
-            <Header />
+            <Header
+                search={setHotels}
+                hotels={hotels}
+            />
             <div className={style.container}>
                 <TitleComp search={setHotels}/>
                 <div>
