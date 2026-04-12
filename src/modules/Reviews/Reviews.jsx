@@ -7,7 +7,7 @@ const Reviews = () => {
         <div className={style.reviews_main}>
              <h1 className={style.tittle_tripma}>
                  Что говорят пользователи
-                 <span className={style.tripma_span}>Tripma</span>
+                 <span className={style.tripma_span}>StayGuest</span>
              </h1>
             <div className={style.reviews_container}>
                 {REVIEWS_DATA.map((item, idx) => {

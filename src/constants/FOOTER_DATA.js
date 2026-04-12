@@ -1,7 +1,7 @@
 export const ABOUT_DATA = {
     title: 'About',
     links: [
-        'About Tripma',
+        'About StayGuest',
         'How it works',
         'Careers',
         'Press',
@@ -38,8 +38,8 @@ export const SUPPORT_DATA = {
 export const APP_DATA = {
     title: 'About',
     links: [
-        'Tripma for Android',
-        'Tripma for iOS',
+        'StayGuest for Android',
+        'StayGuest for iOS',
         'Mobile site',
     ]
 }

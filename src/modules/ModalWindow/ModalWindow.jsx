@@ -5,7 +5,9 @@ import geoIcon from '../../assets/images/location-sign-svgrepo-com.svg'
 import dateIcon from '../../assets/images/date-range-svgrepo-com.svg'
 import userIcon from '../../assets/images/user-icon-svgrepo-com.svg'
 import InputMaterial from "../../components/InputMaterial/InputMaterial";
+import phoneIcon from '../../assets/images/phone-call-svgrepo-com.svg'; 
 import {showError, showInfo, showSuccess} from "../../utils/Alert";
+
 
 const ModalWindow = (props) => {
 
@@ -22,7 +24,7 @@ const ModalWindow = (props) => {
     return (
         <div
             className={style.ModalWindowBlur}
-            // onClick={active(false)}
+           
             onClick={active}
         >
             <div
@@ -63,6 +65,15 @@ const ModalWindow = (props) => {
                         width={'250px'}
                         onChange={(e) => {setData(prevState => ({...prevState, persons: e.target.value}))}}
                     />
+                    <InputMaterial
+                        icon={phoneIcon}
+                        placeholder={'Номер Телефона'}
+                        type={'number'}
+                        height={'8vh'}
+                        width={'250px'}
+                        onChange={(e) => {setData(prevState => ({...prevState, persons: e.target.value}))}}
+                    />
+                  
                     <input
                         onClick={() => {
                             if (data.city && data.date && data.persons) {

@@ -1,0 +1,40 @@
+.home_info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 70px;
+}
+
+.sliderWrapper {
+    width: 50%;
+    height: 300px;
+}
+
+.sliderWrapper .image-gallery-slide img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.hotels_info {
+    width: 40%;
+}
+.book{
+    width: 50%;
+    margin: 0 0 20px 5%;
+    background: #2F6F8F ;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+
+    &&:hover{
+        opacity: 90%;
+    }
+
+    &&:active{
+        opacity: 80%;
+    }
+}

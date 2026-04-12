@@ -1,37 +1,80 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #7C8DB0;
-    background: white;
-    width: 90%;
-    height: 60px;
-    position: fixed;
-    padding: 0 5%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7c8db0;
+  background: white;
+  width: 90%;
+  height: 60px;
+  position: fixed;
+  padding: 0 5%;
+  margin: 0 auto;
 }
 
 .logo {
-
+  width: 124px;
+  height: 54px;
 }
 
-.navigation{
-    display: flex;
-    list-style: none;
-    gap: 20px;
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation li {
-    cursor: pointer;
-    font-weight: 500;
+  cursor: pointer;
+  font-weight: 500;
+  
 }
 
-.navigation a, span {
-    text-decoration: none;
-    color: #7C8DB0;
-    cursor: pointer;
+.navigation 
+span {
+  text-decoration: none;
+  color: #d7262e;
+  cursor: pointer;
 
-    &&:hover {
-        color: #605DEC;
-    }
+  &&:hover {
+    color: #2f6f8f;
+  }
+}
+.aaa{
+  text-decoration: none;
+  color: #d7262e;
+  cursor: pointer;
+  &&:hover {
+    color: #2f6f8f;
+  }
+}
+.sign_in {
+  text-decoration: none;
+  color: #2f6f8f;
+  background-color: transparent;
+  width: 75px;
+  height: 28px;
+  border: 0px;
+  font-weight: 500;
+  font-size: 15px;
+
+  &&:hover {
+    color: white;
+    background-color: #2f6f8f;
+    border-radius: 5px;
+  }
+}
+.sign_up {
+  color: white;
+  background-color: #2f6f8f;
+  width: 75px;
+  height: 28px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 0px;
+
+  &&:hover {
+    color: #2f6f8f;
+    background-color: white;
+  }
 }

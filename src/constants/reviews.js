@@ -1,6 +1,6 @@
-import avatar from '../assets/images/photo-1.webp'
-import avatar1 from '../assets/images/photo-2.webp'
-import avatar2 from '../assets/images/photo-4.webp'
+import avatar from '../assets/images/fake-kirkorov-news.jpg'
+import avatar1 from '../assets/images/lebron james.png'
+import avatar2 from '../assets/images/buzova.jpg'
 
 
 
@@ -8,21 +8,21 @@ import avatar2 from '../assets/images/photo-4.webp'
 export const REVIEWS_DATA =[
     {
         img:avatar ,
-        name: 'Бекболсун Абдыразаков',
+        name: 'Филипп Киркоров',
         stars: 5 ,
-        text: 'Какой замечательный опыт использования Tripma! Я забронировал себе отель на месяц отпуска через Трипма, и у меня никогда не возникало проблем.'
+        text: 'Какой замечательный опыт использования StayGuest!! Я забронировал себе отель на месяц отпуска через StayGuest, и у меня никогда не возникало проблем.'
 
     } ,
     {
         img:avatar1 ,
-        name: 'Артём Иванов' ,
-        stars: 4.5 ,
-        text: 'Моя семья и я посещаем Бишкек каждый год и обычно бронируем отели, используя другие сервисы. Трипму нам порекомендовал наш давний друг, и я так рад, что мы попробовали ее!'
+        name: 'LeBron James' ,
+        stars: 4.5 , 
+        text: 'My family and i coming to Bishkek every year and often we are booking hotel by coming to hotel. Then one my friend told me about StayGuest and i am glad that i found it!!'
     } ,
     {
         img:avatar2 ,
-        name: 'Бакыт Омурзаков' ,
+        name: 'Ольга Бузова' ,
         stars: 5 ,
-        text: 'Когда я хотел забронировать отель в Бишкеке , у Трипмы был лучший опыт просмотра, поэтому я решил попробовать. Я впервые использовал Tripma, но я определенно порекомендую ее другу .'
+        text: 'Когда я хотел забронировать отель в Бишкеке , у StayGuest был лучший опыт просмотра, поэтому я решил попробовать. Я впервые использовал StayGuest, но я определенно порекомендую ее другу .'
     }
 ]

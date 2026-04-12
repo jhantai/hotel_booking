@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './style.module.css'
-import logo from '../../assets/images/logo.svg'
+import logo from '../../assets/images/LOGO_DIPLOm.png'
+
 import {ABOUT_DATA, PARTNER_DATA, SUPPORT_DATA, APP_DATA} from "../../constants/FOOTER_DATA";
 
 const Footer = () => {

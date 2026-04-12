@@ -16,7 +16,7 @@
 .hotels_container button {
     width: 90%;
     margin: 0 0 20px 5%;
-    background: #605dec;
+    background: #D7262E;
     color: white;
     border-radius: 20px;
     height: 40px;
@@ -55,7 +55,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    color: #6e7491;
+    color: #2F6F8F;
 }
 .hotels_text_name{
     padding: 0 10px ;
@@ -64,7 +64,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    color: #6e7491;
+    color: #2F6F8F;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -82,5 +82,5 @@
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    color: #7c8db0;
+    color: #2F6F8F;
 }

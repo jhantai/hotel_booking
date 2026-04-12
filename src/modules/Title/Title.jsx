@@ -3,15 +3,14 @@ import style from './style.module.css'
 // import InputMaterial from "../../components/InputMaterial/InputMaterial";
 // import {INPUTS_DATA} from "../../constants/INPUTS_DATA";
 
-const TitleComp = (props) => {
+const TitleComp = () => {
 
-    const {
-        // search
-    } = props
+ 
 
     return (
         <div className={style.titleComponent}>
-            <h1 className={style.title}>Это больше, чем просто поездка!</h1>
+            <h1 className={style.title1}>Найдите жилье для новой поездки  </h1>
+            <h3 className={style.title} >Ищите спецпредложения на отели, дома и другие варианты.!</h3>
             <div className={style.Inputs}>
                 {/*{INPUTS_DATA.map((item, idx) => {*/}
                 {/*    return(*/}

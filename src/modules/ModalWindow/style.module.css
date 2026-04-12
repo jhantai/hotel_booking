@@ -21,38 +21,53 @@
     display: flex;
     align-items: center;
     margin-left: 95.5%;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .closeBtn svg {
     cursor: pointer;
     font-size: 30px;
-    color: #6e7491;
+    color: #2F6F8F;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2 {
     text-align: center;
-    color: #6e7491;
+    color: #2F6F8F;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .Inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*margin-top: 50px;*/
     gap: 20px;
     align-items: center;
+    color: #d7262e;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .Button{
     height: 52px;
     margin-top: -1px;
-    background: #605DEC;
+    background: #2F6F8F;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     width: 295px;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
     &&:hover{
         opacity: 90%;
