@@ -3,9 +3,10 @@ import {HOTELS_DATA} from '../../constants/hotels'
 import style from './style.module.css'
 import {showError, showSuccess} from "../../utils/Alert";
 import { useNavigate } from "react-router-dom";
+import { useLang } from '../../context/LangContext';
 
 const Hotels = (props) => {
-
+const { t, lang, toggleLang } = useLang();
     const {
         active
     } = props
@@ -22,7 +23,7 @@ const Hotels = (props) => {
                             </div>
                             <div className={style.hotels_text_container}>
                                 <p className={style.hotels_text_name}>{item.name}</p>
-                                <p className={style.hotels_price}>{item.price}сом </p>
+                                {/* <p className={style.hotels_price}>{item.price}сом </p> */}
                             </div>
                             {/* <p className={style.hotels_text}>{item.text}</p> */}
                             
@@ -32,7 +33,7 @@ const Hotels = (props) => {
 
                                     navigate(`/details/${idx}`);
                                 }}
-                            >Подробнее</button>
+                            >{t('details')}</button>
                         </div>
                     </div>
                 )

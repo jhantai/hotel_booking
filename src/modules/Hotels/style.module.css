@@ -3,14 +3,14 @@
     /*flex-direction: row;*/
     flex-wrap: wrap;
     justify-content:space-between;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 100px;
 
 }
 .hotels_container{
     box-shadow: 9px 6px 60px 0px rgba(34, 60, 80, 0.2);
     border-radius: 30px;
-    width: 410px;
+    width: 470px;
 }
 
 .hotels_container button {
@@ -35,7 +35,7 @@
 
 
 .hotels_image{
-    width: 410px;
+    width: 470px;
     height: 377px;
 
 }

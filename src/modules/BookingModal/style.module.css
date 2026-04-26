@@ -1,0 +1,465 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 35, 64, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  background: white;
+  border-radius: 24px;
+  padding: 36px 32px 32px;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.25s ease;
+}
+.modalLarge {
+  background: white;
+  border-radius: 24px;
+  padding: 36px 32px 32px;
+  width: 100%;
+  max-width: 620px;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.25s ease;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar */
+.modalLarge::-webkit-scrollbar {
+  width: 5px;
+}
+.modalLarge::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+.modalLarge::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 10px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-family: "Nunito Sans", sans-serif;
+  z-index: 1;
+}
+.closeBtn:hover {
+  background: #fee2e2;
+  color: #d7262e;
+}
+
+.modalHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modalIcon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+.modalTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a2340;
+  margin: 0 0 4px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.modalSubtitle {
+  font-size: 13px;
+  color: #7c8db0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.formGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.formCol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+  background: white;
+}
+.inputWrap:focus-within {
+  border-color: #2f6f8f;
+}
+.inputError {
+  border-color: #d7262e !important;
+}
+
+.icon {
+  padding: 0 11px;
+  font-size: 14px;
+  background: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  height: 44px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #1a2340;
+  background: transparent;
+  min-width: 0;
+}
+.input::placeholder {
+  color: #a0aec0;
+}
+.errMsg {
+  font-size: 11px;
+  color: #d7262e;
+  font-weight: 600;
+}
+
+.infoBox {
+  height: 44px;
+  background: #f0fdf4;
+  border: 2px solid #bbf7d0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  font-size: 13px;
+  color: #166534;
+  font-weight: 600;
+}
+
+/* ── Room list ── */
+.roomSectionLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+}
+
+.roomList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.roomCard {
+  display: block; /* override label default */
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.18s;
+  background: white;
+  user-select: none;
+}
+.roomCard:hover:not(.roomTaken) {
+  border-color: #2f6f8f;
+  background: #f8fbff;
+}
+.roomSelected {
+  border-color: #2f6f8f !important;
+  background: #eff7ff !important;
+}
+.roomTaken {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f9fafb !important;
+}
+
+.roomCardInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  gap: 12px;
+}
+
+.roomCardLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.roomName {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a2340;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.roomMeta {
+  font-size: 11px;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.roomCardRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  gap: 2px;
+}
+
+.roomPrice {
+  font-size: 14px;
+  font-weight: 800;
+  color: #2f6f8f;
+  white-space: nowrap;
+}
+
+.roomPerNight {
+  font-size: 10px;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.roomTakenBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #d7262e;
+  background: #fff0f0;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+/* ── Summary bar ── */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eff7ff;
+  border: 1.5px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #4a5568;
+  font-weight: 600;
+}
+.summaryTotal {
+  font-size: 16px;
+  font-weight: 800;
+  color: #2f6f8f;
+}
+
+/* ── Submit ── */
+.submitBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #d7262e 0%, #b71c23 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.25s;
+  margin-top: 16px;
+  box-shadow: 0 4px 20px rgba(215, 38, 46, 0.3);
+}
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(215, 38, 46, 0.4);
+}
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Auth block ── */
+.authBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+.authEmoji {
+  font-size: 52px;
+}
+.authTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a2340;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+.authSub {
+  font-size: 14px;
+  color: #7c8db0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Result block ── */
+.resultBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+  text-align: center;
+}
+.resultIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+}
+.resultTitle {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+.resultText {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 340px;
+}
+
+/* ── Shared buttons ── */
+.btnPrimary {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(135deg, #d7262e 0%, #b71c23 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.2s;
+  box-shadow: 0 4px 16px rgba(215, 38, 46, 0.3);
+}
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(215, 38, 46, 0.4);
+}
+
+.btnSecondary {
+  width: 100%;
+  height: 46px;
+  background: transparent;
+  color: #2f6f8f;
+  border: 2px solid #2f6f8f;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.2s;
+}
+.btnSecondary:hover {
+  background: #2f6f8f;
+  color: white;
+}
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: #f1f5f9;
+  margin: 4px 0;
+}
+
+@media (max-width: 520px) {
+  .modalLarge,
+  .modal {
+    padding: 28px 16px 24px;
+    border-radius: 16px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .roomName {
+    font-size: 12px;
+  }
+}

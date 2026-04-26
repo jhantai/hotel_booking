@@ -7,8 +7,10 @@ header {
   width: 90%;
   height: 60px;
   position: fixed;
+  top: 0;
   padding: 0 5%;
-  margin: 0 auto;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 }
 
 .logo {
@@ -22,59 +24,91 @@ header {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation li {
   cursor: pointer;
   font-weight: 500;
-  
 }
 
-.navigation 
-span {
+.aaa {
   text-decoration: none;
   color: #d7262e;
   cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.aaa:hover { color: #2f6f8f; }
 
-  &&:hover {
-    color: #2f6f8f;
-  }
+.auth_buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-.aaa{
-  text-decoration: none;
-  color: #d7262e;
+
+.langBtn {
+  background: #f1f5f9;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 700;
   cursor: pointer;
-  &&:hover {
-    color: #2f6f8f;
-  }
+  color: #4a5568;
+  font-family: "Nunito Sans", sans-serif;
+  transition: all 0.2s;
+  white-space: nowrap;
 }
+.langBtn:hover {
+  background: #e2e8f0;
+  border-color: #2f6f8f;
+  color: #2f6f8f;
+}
+
+.userGreet {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f6f8f;
+  white-space: nowrap;
+}
+
 .sign_in {
-  text-decoration: none;
   color: #2f6f8f;
   background-color: transparent;
-  width: 75px;
-  height: 28px;
-  border: 0px;
-  font-weight: 500;
-  font-size: 15px;
-
-  &&:hover {
-    color: white;
-    background-color: #2f6f8f;
-    border-radius: 5px;
-  }
+  padding: 0 14px;
+  height: 34px;
+  border: 2px solid #2f6f8f;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: "Nunito Sans", sans-serif;
+  white-space: nowrap;
 }
-.sign_up {
+.sign_in:hover {
   color: white;
   background-color: #2f6f8f;
-  width: 75px;
-  height: 28px;
-  font-size: 15px;
-  font-weight: 500;
-  border: 0px;
+}
 
-  &&:hover {
-    color: #2f6f8f;
-    background-color: white;
-  }
+.sign_up {
+  color: white;
+  background-color: #d7262e;
+  padding: 0 14px;
+  height: 34px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: "Nunito Sans", sans-serif;
+  white-space: nowrap;
+}
+.sign_up:hover {
+  background-color: #b71c23;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(215,38,46,0.3);
 }

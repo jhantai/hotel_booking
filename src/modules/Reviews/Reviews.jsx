@@ -2,11 +2,13 @@ import React from 'react';
 import {REVIEWS_DATA} from '../../constants/reviews'
 import Rating from '@mui/material/Rating';
 import style from './style.module.css'
+import { useLang } from '../../context/LangContext';
 const Reviews = () => {
+      const { t, lang, toggleLang } = useLang();
     return (
         <div className={style.reviews_main}>
              <h1 className={style.tittle_tripma}>
-                 Что говорят пользователи
+             {t('reviews')}
                  <span className={style.tripma_span}>StayGuest</span>
              </h1>
             <div className={style.reviews_container}>
